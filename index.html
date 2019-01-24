@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css清除浮动方法</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!-- 设置父元素高度 -->
+    <div class="box box1">
+        <div class="content">设置父元素高度</div>
+    </div>
+    <br>
+
+    <!-- 结尾处加空div标签clear：both。 -->
+    <div class="box">
+        <div class="content">结尾处加空div标签clear：both。</div>
+        <div class="clear"></div>
+    </div>
+    <br>
+
+    <!-- 父级div定义overflow：hidden。 -->
+    <div class="box box3">
+        <div class="content">父级div定义overflow：hidden。</div>
+    </div>
+    <br>
+
+    <!-- 父级div定义overflow：auto。 -->
+    <div class="box box4">
+        <div class="content">父级div定义overflow：auto。</div>
+    </div>
+    <br>
+
+    <!-- 父级div定义display：table ,需要定义宽度。-->
+    <div class="box box5">
+        <div class="content">父级div定义display：table ,需要定义宽度。</div>
+    </div>
+    <br>
+
+    <!-- 结尾处加br标签clear:both。 -->
+    <div class="box">
+        <div class="content">结尾处加br标签clear:both。</div>
+        <br class="clear">
+    </div>
+    <br>
+
+    <!-- 父级div定义伪类:after和zoom。 -->
+    <div class="box clearfloat">
+        <div class="content">父级div定义伪类:after和zoom。</div>
+    </div>
+    <br>
+
+    <!-- 父级div也浮动，需要定义宽度。 -->
+    <div class="box box8">
+        <div class="content">父级div也浮动，需要定义宽度。</div>
+    </div>
+    <br>
+
+
+</body>
+
+</html>

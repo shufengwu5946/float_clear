@@ -1,0 +1,48 @@
+.box {
+    border: solid 1px black;
+}
+
+.content {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    float: left;
+}
+
+.box1 {
+    height: 100px;
+}
+
+.clear {
+    clear: both;
+}
+
+.box3 {
+    overflow: hidden;
+}
+
+.box4 {
+    overflow: auto;
+}
+
+.box5 {
+    display: table;
+    width: 100%;
+}
+
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+
+.clearfloat {
+    zoom: 1
+}
+
+.box8 {
+    float: left;
+    width: 100%;
+}
